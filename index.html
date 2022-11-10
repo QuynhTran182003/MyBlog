@@ -13,9 +13,7 @@
     <header class="container-md d-flex align-items-center rounded">
         <img src="https://picsum.photos/130" class="rounded-3 d-block mx-auto my-4" alt="">
     </header>
-    <div class="nav">
-        
-    </div>
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-light mx-auto">
         <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             <span class="">-</span>
@@ -38,7 +36,26 @@
                     <a class="nav-link text-dark " href="#">Contents</a>
                 </li>
                 <li class="nav-item mx-auto">
-                    <a class="nav-link text-dark " href="#">Suggests</a>
+                    <a class="nav-link text-dark " href="#" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Suggests</a>
+                    <!-- Button trigger modal -->
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Announcement</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Sorry! This page is not available for now.
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -77,41 +94,82 @@
                 <nav id="navbar-example3" class="navbar navbar-light bg-light d-flex flex-column justify-content-start col-lg-3 col-sm-12 h-100">
                     <a class="navbar-brand" href="#">Navbar</a>
                     <nav class="nav nav-pills flex-column justify-content-start">
-                        <a class="nav-link" href="#item-1">Đọc với Notecard</a>
-                        <a class="nav-link" href="#item-2">Mot cuon sach ve chu nghia toi gian</a>
+                        <a class="nav-link" href="#item-1">ĐỌC VỚI NOTECARD: PHƯƠNG PHÁP ĐỌC SÁCH HIỆU QUẢ VÀ NHỚ LÂU</a>
+                        <a class="nav-link" href="#item-2">“MỘT CUỐN SÁCH VỀ CHỦ NGHĨA TỐI GIẢN”</a>
+                        <a class="nav-link" href="#item-3">TẠI SAO NÊN NHÌN VÀO “NET WORTH” THAY VÌ LƯƠNG THÁNG?</a>
                     </nav>
                 </nav>
         
                 <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0" class="col-lg-9">
                     <article aria-label="Đọc với Notecard: Phương pháp đọc sách hiệu quả và nhớ lâu" class="px-3 " id="item-1">
-                        <header>
-                            <h3>Đọc với Notecard: Phương pháp đọc sách hiệu quả và nhớ lâu</h3>
+                        <header class="d-flex justify-content-center">
+                            <h4  class="px-3">ĐỌC VỚI NOTECARD: PHƯƠNG PHÁP ĐỌC SÁCH HIỆU QUẢ VÀ NHỚ LÂU</h4>
                         </header>
                         <div class="entry-content">
                             <img src="https://picsum.photos/seed/picsum/1300/900" class="img-fluid" alt="">
                             <p class="my-3">Ai cũng biết mục đích quan trọng nhất của việc đọc sách là rút ra được những bài học giá trị, tinh hoa từ những cuốn sách. Vì thế, ta mới có những quy trình như đọc chủ động bằng việc ghi chép, gạch chân trong quá trình đọc và đọc ứng dụng bằng cách tóm tắt, ghi lại ít nhất 3 bài học mình có được từ cuốn sách... Tuy nhiên, câu hỏi đặt ra là: Làm sao có thể hệ thống hóa những bài học này để mỗi lần gặp băn khoăn nào đó, ta không phải đọc lại toàn bộ cuốn sách, tìm lại từng chỗ ghi chú? Và quan trọng hơn, làm sao ta có thể kết nối những bài học khác nhau từ nhiều cuốn sách để đưa ra ứng dụng đa chiều nhất vào thực tế của mình?</p>
                             <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
                                 Read more
-                                </button>
+                            </button>
                         </div>
                     </article>
                     <hr class="my-5">
                     <article aria-label="Mot cuon sach ve chu nghia toi gian" class=" px-3" id= "item-2">
-                        <header>
-                            <h3>Mot cuon sach ve chu nghia toi gian</h3>
+                        <header class="d-flex justify-content-center">
+                            <h4>“MỘT CUỐN SÁCH VỀ CHỦ NGHĨA TỐI GIẢN”</h4>
                         </header>
                         <div class="entry-content">
                             <img src="https://picsum.photos/seed/picsum/1300/900" class="img-fluid" alt="">
-                            <p class="my-3">Ai cũng biết mục đích quan trọng nhất của việc đọc sách là rút ra được những bài học giá trị, tinh hoa từ những cuốn sách. Vì thế, ta mới có những quy trình như đọc chủ động bằng việc ghi chép, gạch chân trong quá trình đọc và đọc ứng dụng bằng cách tóm tắt, ghi lại ít nhất 3 bài học mình có được từ cuốn sách... Tuy nhiên, câu hỏi đặt ra là: Làm sao có thể hệ thống hóa những bài học này để mỗi lần gặp băn khoăn nào đó, ta không phải đọc lại toàn bộ cuốn sách, tìm lại từng chỗ ghi chú? Và quan trọng hơn, làm sao ta có thể kết nối những bài học khác nhau từ nhiều cuốn sách để đưa ra ứng dụng đa chiều nhất vào thực tế của mình?</p>
+                            <p class="my-3">Chào bạn đọc yêu quý của The Present Writer blog, Sau rất nhiều thử thách, chờ đợi, và quyết tâm, “Một cuốn sách về Chủ nghĩa tối giản” (Phiên bản 2022) chính thức phát hành !!!  Bạn đọc tại Việt Nam có thể mua sách ở những địa chỉ sau: Shopee  Tiki The Present Writer Shop Bạn đọc tại nước ngoài có thể tham khảo thông tin sau: Tại Úc: Viet Book Alley Tại Nhật: iShite, Macawshop Ebook & Audibook: Phiên bản sách điện tử (ebook) và sách nói (audio book) sẽ ra mắt cuối năm 2022 — Quá trình sản xuất, in ấn và phát hành tái bản “Một cuốn sách về Chủ nghĩa tối giản” thực sự là một cuộc hành trình dài và nhiều chông gai</p>
                             <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
                                 Read more
-                                </button>
+                            </button>
+                        </div>
+                    </article>
+                    <hr class="my-5">
+
+                    <article aria-label="TẠI SAO NÊN NHÌN VÀO “NET WORTH” THAY VÌ LƯƠNG THÁNG?" class=" px-3" id= "item-3">
+                        <header class="d-flex justify-content-center">
+                            <h4>TẠI SAO NÊN NHÌN VÀO “NET WORTH” THAY VÌ LƯƠNG THÁNG?</h4>
+                        </header>
+                        <div class="entry-content">
+                            <img src="https://picsum.photos/seed/picsum/1300/900" class="img-fluid" alt="">
+                            <p class="my-3">"Lương tháng bao nhiêu?" chưa phải là câu hỏi đáng sợ nhất. Hơn 10 năm trước, tôi tình cờ biết đến khái niệm "net worth" (tài sản ròng) trong một một lần gõ tên các ngôi sao nổi tiếng lên mạng Internet. "Britney Spears: “$XX million net worth", "Bill Gates: “$XXX billion net worth"—net worth hiện lên như là một thông số quan trọng, được ghi ngay trên profile (mô tả) của những tên tuổi lớn. Điều này làm tôi từng nghĩ rằng net worth chỉ dành cho những người nổi tiếng, quyền lực và giàu có mà thôi. Nhưng sau này, khi tìm hiểu thêm về tài chính cá nhân, tôi mới nhận ra rằng ai cũng có net worth. Thậm chí, nó quan trọng với tất cả mọi người. </p>
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                                Read more
+                            </button>
                         </div>
                     </article>
                 </div>
             </div>
     </div>
-
+    <h3>Recommended blogs</h3>
+    <table class="table table-dark table-hover">
+        <tr>
+            <td>#</td>
+            <td>Blog</td>
+            <td>Subject</td>
+            <td>Views</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>“MỘT CUỐN SÁCH VỀ CHỦ NGHĨA TỐI GIẢN”</td>
+            <td>Lifestyle</td>
+            <td>1,000,000 views</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>ĐỌC VỚI NOTECARD: PHƯƠNG PHÁP ĐỌC SÁCH HIỆU QUẢ VÀ NHỚ LÂU</td>
+            <td>Self-study</td>
+            <td>987,993 views</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>TẠI SAO NÊN NHÌN VÀO “NET WORTH” THAY VÌ LƯƠNG THÁNG?</td>
+            <td>Others</td>
+            <td>893,423 views</td>
+        </tr>
+      </table>
         
     </main>
     
