@@ -4,92 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>Blog - The Hanoi Writer</title>
 </head>
-<body class="container w-75 mx-auto px-2">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-
-    <header class="d-flex align-items-center">
-        <nav class="nav po">
-            <a class="nav-link text-dark">Blog</a>
-            <a class="nav-link text-dark">Youtube</a>
-            <a class="nav-link text-dark">Podcast</a>
-        </nav>
-        <img src="https://picsum.photos/130" class="rounded-3 d-block mx-auto" alt="">
-        <nav class="nav">
-            <a class="nav-link text-dark">Introduce</a>
-            <a class="nav-link text-dark">Contents</a>
-            <a class="nav-link text-dark">Suggests</a>
-        </nav>
-    </header>
-        
-        <main class="content my-5 d-flex position:relative">
-            <!-- <article aria-label="Đọc với Notecard: Phương pháp đọc sách hiệu quả và nhớ lâu" class="">
-                <header>
-                    <h3>Đọc với Notecard: Phương pháp đọc sách hiệu quả và nhớ lâu</h3>
-                </header>
-                <div class="entry-content">
-                    <img src="https://picsum.photos/seed/picsum/1300/900" class="img-fluid" alt="">
-                    <p class="my-3">Ai cũng biết mục đích quan trọng nhất của việc đọc sách là rút ra được những bài học giá trị, tinh hoa từ những cuốn sách. Vì thế, ta mới có những quy trình như đọc chủ động bằng việc ghi chép, gạch chân trong quá trình đọc và đọc ứng dụng bằng cách tóm tắt, ghi lại ít nhất 3 bài học mình có được từ cuốn sách... Tuy nhiên, câu hỏi đặt ra là: Làm sao có thể hệ thống hóa những bài học này để mỗi lần gặp băn khoăn nào đó, ta không phải đọc lại toàn bộ cuốn sách, tìm lại từng chỗ ghi chú? Và quan trọng hơn, làm sao ta có thể kết nối những bài học khác nhau từ nhiều cuốn sách để đưa ra ứng dụng đa chiều nhất vào thực tế của mình?</p>
-                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
-                        Read more
-                      </button>
-                </div>
-            </article> -->
-            <!-- <hr class="my-5">
-            <article aria-label="Mot cuon sach ve chu nghia toi gian" class="">
-                <header>
-                    <h3>Mot cuon sach ve chu nghia toi gian</h3>
-                </header>
-                <div class="entry-content">
-                    <img src="https://picsum.photos/seed/picsum/1300/900" class="img-fluid" alt="">
-                    <p>Ai cũng biết mục đích quan trọng nhất của việc đọc sách là rút ra được những bài học giá trị, tinh hoa từ những cuốn sách. Vì thế, ta mới có những quy trình như đọc chủ động bằng việc ghi chép, gạch chân trong quá trình đọc và đọc ứng dụng bằng cách tóm tắt, ghi lại ít nhất 3 bài học mình có được từ cuốn sách... Tuy nhiên, câu hỏi đặt ra là: Làm sao có thể hệ thống hóa những bài học này để mỗi lần gặp băn khoăn nào đó, ta không phải đọc lại toàn bộ cuốn sách, tìm lại từng chỗ ghi chú? Và quan trọng hơn, làm sao ta có thể kết nối những bài học khác nhau từ nhiều cuốn sách để đưa ra ứng dụng đa chiều nhất vào thực tế của mình?</p>
-                </div>
-            </article> -->
-            
-            <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3 h-75">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <nav class="nav nav-pills flex-column">
-                  <a class="nav-link" href="#item-1">Đọc với Notecard</a>
-                  <a class="nav-link" href="#item-2">Mot cuon sach ve chu nghia toi gian</a>
-                </nav>
-            </nav>
+<body class="container w-80 mx-auto border shadow my-4 p-0 rounded">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script> -->
     
-            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
-                <article aria-label="Đọc với Notecard: Phương pháp đọc sách hiệu quả và nhớ lâu" class="" id="item-1">
-                    <header>
-                        <h3>Đọc với Notecard: Phương pháp đọc sách hiệu quả và nhớ lâu</h3>
-                    </header>
-                    <div class="entry-content">
-                        <img src="https://picsum.photos/seed/picsum/1300/900" class="img-fluid" alt="">
-                        <p class="my-3">Ai cũng biết mục đích quan trọng nhất của việc đọc sách là rút ra được những bài học giá trị, tinh hoa từ những cuốn sách. Vì thế, ta mới có những quy trình như đọc chủ động bằng việc ghi chép, gạch chân trong quá trình đọc và đọc ứng dụng bằng cách tóm tắt, ghi lại ít nhất 3 bài học mình có được từ cuốn sách... Tuy nhiên, câu hỏi đặt ra là: Làm sao có thể hệ thống hóa những bài học này để mỗi lần gặp băn khoăn nào đó, ta không phải đọc lại toàn bộ cuốn sách, tìm lại từng chỗ ghi chú? Và quan trọng hơn, làm sao ta có thể kết nối những bài học khác nhau từ nhiều cuốn sách để đưa ra ứng dụng đa chiều nhất vào thực tế của mình?</p>
-                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
-                            Read more
-                          </button>
-                    </div>
-                </article>
-                <hr class="my-5">
-                <article aria-label="Mot cuon sach ve chu nghia toi gian" class="" id="item-2">
-                    <header>
-                        <h3>Mot cuon sach ve chu nghia toi gian</h3>
-                    </header>
-                    <div class="entry-content">
-                        <img src="https://picsum.photos/seed/picsum/1300/900" class="img-fluid" alt="">
-                        <p class="my-3">Ai cũng biết mục đích quan trọng nhất của việc đọc sách là rút ra được những bài học giá trị, tinh hoa từ những cuốn sách. Vì thế, ta mới có những quy trình như đọc chủ động bằng việc ghi chép, gạch chân trong quá trình đọc và đọc ứng dụng bằng cách tóm tắt, ghi lại ít nhất 3 bài học mình có được từ cuốn sách... Tuy nhiên, câu hỏi đặt ra là: Làm sao có thể hệ thống hóa những bài học này để mỗi lần gặp băn khoăn nào đó, ta không phải đọc lại toàn bộ cuốn sách, tìm lại từng chỗ ghi chú? Và quan trọng hơn, làm sao ta có thể kết nối những bài học khác nhau từ nhiều cuốn sách để đưa ra ứng dụng đa chiều nhất vào thực tế của mình?</p>
-                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
-                            Read more
-                          </button>
-                    </div>
-                </article>
-              </div>
-        </main>
+    <header class="container-md d-flex align-items-center rounded">
+        <img src="https://picsum.photos/130" class="rounded-3 d-block mx-auto my-4" alt="">
+    </header>
+    <div class="nav">
+        
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mx-auto">
+        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <span class="">-</span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapseExample">
+            <ul class="navbar-nav w-100">
+                <li class="nav-item mx-auto">
+                    <a class="nav-link text-dark " href="#">Blog</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <a class="nav-link text-dark " href="https://www.youtube.com/channel/UCRzBCxZnz7b69_9qTFp4OEA">Youtube</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <a class="nav-link text-dark " href="#">Podcast</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <a class="nav-link text-dark " href="#">Introduce</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <a class="nav-link text-dark " href="#">Contents</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <a class="nav-link text-dark " href="#">Suggests</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        
+    <main class="content my-5">
+        <div class="carousel slide w-75 mx-auto" id="carouselExample" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" aria-label="Slide 0" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images\hoi-an-at-night-2.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="images\pho_co_ha_noi_01-2 edited.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="images\Tet.jpg" class="d-block w-100" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="content-navbar my-5 container">
+            <div class="row m-3">
+                <nav id="navbar-example3" class="navbar navbar-light bg-light d-flex flex-column justify-content-start col-lg-3 col-sm-12 h-100">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <nav class="nav nav-pills flex-column justify-content-start">
+                        <a class="nav-link" href="#item-1">Đọc với Notecard</a>
+                        <a class="nav-link" href="#item-2">Mot cuon sach ve chu nghia toi gian</a>
+                    </nav>
+                </nav>
+        
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0" class="col-lg-9">
+                    <article aria-label="Đọc với Notecard: Phương pháp đọc sách hiệu quả và nhớ lâu" class="px-3 " id="item-1">
+                        <header>
+                            <h3>Đọc với Notecard: Phương pháp đọc sách hiệu quả và nhớ lâu</h3>
+                        </header>
+                        <div class="entry-content">
+                            <img src="https://picsum.photos/seed/picsum/1300/900" class="img-fluid" alt="">
+                            <p class="my-3">Ai cũng biết mục đích quan trọng nhất của việc đọc sách là rút ra được những bài học giá trị, tinh hoa từ những cuốn sách. Vì thế, ta mới có những quy trình như đọc chủ động bằng việc ghi chép, gạch chân trong quá trình đọc và đọc ứng dụng bằng cách tóm tắt, ghi lại ít nhất 3 bài học mình có được từ cuốn sách... Tuy nhiên, câu hỏi đặt ra là: Làm sao có thể hệ thống hóa những bài học này để mỗi lần gặp băn khoăn nào đó, ta không phải đọc lại toàn bộ cuốn sách, tìm lại từng chỗ ghi chú? Và quan trọng hơn, làm sao ta có thể kết nối những bài học khác nhau từ nhiều cuốn sách để đưa ra ứng dụng đa chiều nhất vào thực tế của mình?</p>
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                                Read more
+                                </button>
+                        </div>
+                    </article>
+                    <hr class="my-5">
+                    <article aria-label="Mot cuon sach ve chu nghia toi gian" class=" px-3" id= "item-2">
+                        <header>
+                            <h3>Mot cuon sach ve chu nghia toi gian</h3>
+                        </header>
+                        <div class="entry-content">
+                            <img src="https://picsum.photos/seed/picsum/1300/900" class="img-fluid" alt="">
+                            <p class="my-3">Ai cũng biết mục đích quan trọng nhất của việc đọc sách là rút ra được những bài học giá trị, tinh hoa từ những cuốn sách. Vì thế, ta mới có những quy trình như đọc chủ động bằng việc ghi chép, gạch chân trong quá trình đọc và đọc ứng dụng bằng cách tóm tắt, ghi lại ít nhất 3 bài học mình có được từ cuốn sách... Tuy nhiên, câu hỏi đặt ra là: Làm sao có thể hệ thống hóa những bài học này để mỗi lần gặp băn khoăn nào đó, ta không phải đọc lại toàn bộ cuốn sách, tìm lại từng chỗ ghi chú? Và quan trọng hơn, làm sao ta có thể kết nối những bài học khác nhau từ nhiều cuốn sách để đưa ra ứng dụng đa chiều nhất vào thực tế của mình?</p>
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                                Read more
+                                </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+    </div>
+
+        
+    </main>
     
 
     <footer>
         Copyright © 2022 The Hanoi Writer · Log in
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
 </body>
 </html>
